@@ -8,6 +8,14 @@
   background: linear-gradient(68.66deg, #0F1011 0%, #010242 100%);background: linear-gradient(68.66deg, #0F1011 0%, #010242 100%);
 }
 
+.imgContainer {
+  position: absolute;
+  left: 4.13%;
+  right: 93.97%;
+  top: 5.83%;
+  bottom: 91.71%;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
