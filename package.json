@@ -1,12 +1,11 @@
 {
-  "name": "commit.dev",
-  "version": "0.1.0",
-  "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build && next export",
+    "dev": "next dev",
     "start": "next start"
   },
+  "name": "commit.dev",
+  "version": "0.1.0",
   "dependencies": {
     "next": "10.0.5",
     "react": "17.0.1",
