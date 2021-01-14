@@ -1,5 +1,5 @@
 import styles from 'styles/Home.module.css'
-import {Header} from 'components'
+import {Header, Section} from 'components'
 
 export default function Home() {
   const Paragraph = ({children, title}) => (
@@ -17,17 +17,22 @@ export default function Home() {
 
       <Header>Take control of your career</Header>
 
-      <Paragraph {...{title: 'Connect'}}>
+      <Paragraph title='Connect'>
         Build meaningful relationships in a distributed community of Software Engineers
       </Paragraph>
-      <Paragraph {...{title: 'Explore'}}>
+      <Paragraph title='Explore'>
         Get matched with challenging projects at exciting Silicon Valley
         startups and build impactful products
       </Paragraph>
-      <Paragraph {...{title: 'Elevate'}}>
+      <Paragraph ttile='Elevate'>
         Refine or expand your expertise through hands-on projects,
         peer-to-peer coaching and professional development opportunities
       </Paragraph>
+
+      <Section name='closed-beta'>
+        Commit is currently in closed-beta. Apply now to be a part of the
+        community soon.
+      </Section>
     </div>
   )
 }
