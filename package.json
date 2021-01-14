@@ -1,15 +1,16 @@
 {
-  "scripts": {
-    "build": "next build && next export",
-    "dev": "next dev",
-    "start": "next start"
-  },
-  "name": "commit.dev",
-  "version": "0.1.0",
   "dependencies": {
     "next": "10.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "styled-components": "^5.2.1"
-  }
+  },
+  "license": "ISC",
+  "name": "commit.dev",
+  "scripts": {
+    "build": "next build && next export",
+    "dev": "next dev",
+    "start": "next start"
+  },
+  "version": "0.1.0"
 }
