@@ -29,7 +29,7 @@ export default function Home() {
         peer-to-peer coaching and professional development opportunities
       </Paragraph>
 
-      <Section name='closed-beta'>
+      <Section className={styles.closedBetaSection}>
         Commit is currently in closed-beta. Apply now to be a part of the
         community soon.
       </Section>
