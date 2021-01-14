@@ -1,4 +1,5 @@
 import styles from 'styles/Home.module.css'
+import {Header} from 'components'
 
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
       <div className={styles.imgContainer}>
         <img src='/images/commit-logo-white.svg' alt='commit-logo'/>
       </div>
-      Hello World!
+      <Header>Take control of your career</Header>
     </div>
   )
 }
