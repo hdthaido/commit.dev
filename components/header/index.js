@@ -15,4 +15,5 @@ const Header = styled.h1`
 
   color: #FFFFFF;
 `
+
 export default Header
