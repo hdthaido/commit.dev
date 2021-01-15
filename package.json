@@ -5,16 +5,6 @@
     "react-dom": "17.0.1",
     "styled-components": "^5.2.1"
   },
-  "license": "ISC",
-  "name": "commit.dev",
-  "scripts": {
-    "build": "next build && next export",
-    "dev": "next dev",
-    "start": "next start",
-    "lint": "export BABEL_ENV=development && eslint --ignore-path .gitignore pages",
-    "format": "prettier-eslint --eslint-config-path ./.eslintrc.js --write $PWD'/pages/*.js'"
-  },
-  "version": "0.1.0",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/eslint-parser": "^7.12.1",
@@ -33,5 +23,15 @@
     "prettier": "2.2.1",
     "prettier-eslint": "^12.0.0",
     "prettier-eslint-cli": "^5.0.0"
-  }
+  },
+  "license": "ISC",
+  "name": "commit.dev",
+  "scripts": {
+    "build": "next build && next export",
+    "dev": "next dev",
+    "format": "prettier-eslint --eslint-config-path ./.eslintrc.js --write $PWD'/pages/*.js'",
+    "lint": "export BABEL_ENV=development && eslint --ignore-path .gitignore pages",
+    "start": "next start"
+  },
+  "version": "0.1.0"
 }
