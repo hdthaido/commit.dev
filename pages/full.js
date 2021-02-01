@@ -1,8 +1,8 @@
 // TODO: this will replace pages/index.js eventually. Keeping separate to avoid merge conflicts for now
 
 import {
+  ApplyLink,
   ArticlePreview,
-  Button,
   Testimonials,
   Heading,
   Text,
@@ -14,6 +14,8 @@ import ElevateSvg from 'public/elevate.svg'
 import ExploreSvg from 'public/explore.svg'
 import QuotesSvg from 'public/quotation-marks.svg'
 import styles from 'styles/full.module.css'
+
+const { h2, h3 } = Heading.VARIANT
 
 const Full = () => (
   <div className={styles.contentRoot}>
@@ -30,7 +32,7 @@ const Full = () => (
             Commit is designing the future of work and we're putting Engineers
             at the center.
           </Text>
-          <Button className={styles.heroButton}>Apply to Join Us</Button>
+          <ApplyLink className={styles.heroLink}>Apply to Join Us</ApplyLink>
         </div>
         <div className={styles.heroSvg}>
           <BracketSvg />
@@ -42,10 +44,7 @@ const Full = () => (
       <div className={styles.gridSection}>
         <div className={styles.feature}>
           <ConnectSvg />
-          <Heading
-            variant={Heading.VARIANT.h2}
-            className={styles.featureHeading}
-          >
+          <Heading variant={h2} className={styles.featureHeading}>
             Connect
           </Heading>
           <Text>
@@ -55,10 +54,7 @@ const Full = () => (
         </div>
         <div className={styles.feature}>
           <ExploreSvg />
-          <Heading
-            variant={Heading.VARIANT.h2}
-            className={styles.featureHeading}
-          >
+          <Heading variant={h2} className={styles.featureHeading}>
             Explore
           </Heading>
           <Text>
@@ -67,10 +63,7 @@ const Full = () => (
         </div>
         <div className={styles.feature}>
           <ElevateSvg />
-          <Heading
-            variant={Heading.VARIANT.h2}
-            className={styles.featureHeading}
-          >
+          <Heading variant={h2} className={styles.featureHeading}>
             Elevate
           </Heading>
           <Text>
@@ -81,7 +74,7 @@ const Full = () => (
       </div>
     </section>
     <section className={styles.articles}>
-      <Heading variant={Heading.VARIANT.h3} className={styles.articlesHeading}>
+      <Heading variant={h2} className={styles.articlesHeading}>
         Featured Articles
       </Heading>
       <div className={styles.gridSection}>
@@ -115,7 +108,7 @@ const Full = () => (
     </section>
     <section className={`${styles.about} ${styles.grey}`}>
       <div className={styles.flexSection}>
-        <Heading variant={Heading.VARIANT.h2} className={styles.aboutHeading}>
+        <Heading variant={h2} className={styles.aboutHeading}>
           How it Works
         </Heading>
         <div className={styles.aboutDescription}>
@@ -145,13 +138,10 @@ const Full = () => (
     </section>
     <section className={`${styles.projects} ${styles.dark}`}>
       <div className={styles.flexSection}>
-        <Heading
-          variant={Heading.VARIANT.h2}
-          className={styles.projectsHeading}
-        >
-          Our Technology
+        <Heading variant={h2} className={styles.projectsHeading}>
+          The Commit Platform
         </Heading>
-        <Text className={styles.projectsOverview}>
+        <Text sectionText className={styles.projectsOverview}>
           The Commit Platform replaces the technical interview with deep
           backgrounds, matches Software Engineers with relevant startups, and
           connect Engineers with peers for interest sharing or technical
@@ -159,10 +149,7 @@ const Full = () => (
         </Text>
         <div className={styles.projectList}>
           <div className={styles.project}>
-            <Heading
-              variant={Heading.VARIANT.h3}
-              className={styles.projectName}
-            >
+            <Heading variant={h3} className={styles.projectName}>
               Commit Zero
             </Heading>
             <Text className={styles.projectDescription}>
@@ -174,10 +161,7 @@ const Full = () => (
           </div>
           <div className={styles.projectDivider} />
           <div className={styles.project}>
-            <Heading
-              variant={Heading.VARIANT.h3}
-              className={styles.projectName}
-            >
+            <Heading variant={h3} className={styles.projectName}>
               Helix
             </Heading>
             <Text className={styles.projectDescription}>
@@ -192,10 +176,7 @@ const Full = () => (
     </section>
     <section className={styles.testimonials}>
       <div className={styles.flexSection}>
-        <Heading
-          variant={Heading.VARIANT.h2}
-          className={styles.testimonialsHeading}
-        >
+        <Heading variant={h2} className={styles.testimonialsHeading}>
           What Our Engineering Partners Have to Say
         </Heading>
         <QuotesSvg />
@@ -204,10 +185,7 @@ const Full = () => (
     </section>
     <section className={`${styles.partners} ${styles.grey}`}>
       <div className={styles.flexSection}>
-        <Heading
-          variant={Heading.VARIANT.h2}
-          className={styles.partnersHeading}
-        >
+        <Heading variant={h2} className={styles.partnersHeading}>
           Who We Work With
         </Heading>
         <div className={styles.partnersList}>
@@ -261,7 +239,7 @@ const Full = () => (
         <Text className={styles.footerText}>
           Interested in Taking Control of your Career?
         </Text>
-        <Button className={styles.footerButton}>Apply to Join Us</Button>
+        <ApplyLink className={styles.footerLink}>Apply to Join Us</ApplyLink>
         <img alt="Commit logo" src="/commit-logo.svg" />
       </div>
     </footer>

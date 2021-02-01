@@ -96,13 +96,14 @@ h1.heroHeading .highlight {
   color: #54ffff;
 }
 p.heroText {
+  font-family: Montserrat;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 2.25rem;
   margin-bottom: 4.5rem;
   text-align: left;
 }
-button.heroButton {
+a.heroLink {
   max-width: 380px;
   margin-bottom: 2em;
 }
@@ -115,7 +116,7 @@ button.heroButton {
     margin-top: 180px;
     margin-bottom: 4.25rem;
   }
-  button.heroButton {
+  a.heroLink {
     max-width: 100%;
     min-width: 100%;
   }
@@ -144,7 +145,7 @@ button.heroButton {
     line-height: 2rem;
     margin-bottom: 3rem;
   }
-  button.heroButton {
+  a.heroLink {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
@@ -177,10 +178,8 @@ button.heroButton {
   margin-bottom: 2.25em;
 }
 .features h2.featureHeading {
-  color: #000000;
   font-size: 2rem;
   line-height: 2.5rem;
-  text-transform: uppercase;
   margin: 1rem 0;
 }
 .features .feature p {
@@ -219,36 +218,27 @@ button.heroButton {
 
 /* Articles Styles */
 .articles {
-  padding: 52px 20px 0px 20px;
+  padding: 0px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 88px;
-  margin-bottom: 128px;
+  margin: 124px 0px;
 }
 .articles .articlesHeading {
-  color: #000000;
-  font-size: 2.25rem;
-  font-weight: 800;
-  line-height: 2.75rem;
-  text-transform: uppercase;
   margin: 0 24px 3rem 24px;
   text-align: center;
 }
 
 @media only screen and (max-width: 1023px) {
   .articles {
-    padding: 52px 0px 24px 0px;
+    padding: 0px;
   }
 }
 
 @media only screen and (max-width: 413px) {
   .articles {
     margin-top: 36px;
-  }
-  .articles .articlesHeading {
-    font-size: 1.75rem;
-    line-height: 2.125rem;
+    margin-bottom: 79px;
   }
 }
 
@@ -260,12 +250,8 @@ button.heroButton {
   flex-direction: row;
 }
 .about h2.aboutHeading {
-  font-weight: 800;
   font-size: 2.625rem;
   line-height: 3.125rem;
-  text-transform: uppercase;
-  color: #000000;
-  margin-top: 0;
   margin-left: 17%;
 }
 .about .aboutDescription {
@@ -295,10 +281,6 @@ button.heroButton {
 }
 
 @media only screen and (max-width: 413px) {
-  .about h2.aboutHeading {
-    font-size: 1.75rem;
-    line-height: 2.125rem;
-  }
   .about .aboutDescription {
     font-size: 1rem;
     line-height: 1.625rem;
@@ -315,19 +297,14 @@ button.heroButton {
   align-items: center;
 }
 .projects h2.projectsHeading {
-  font-size: 3rem;
-  line-height: 3.75rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   text-align: center;
-  text-transform: uppercase;
+  color: transparent;
   background: linear-gradient(90deg, #54ffff 0.78%, #68b5ff 91.85%);
   background-clip: text;
-  margin-top: 0px;
 }
 .projects p.projectsOverview {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  text-align: center;
-  color: #8493b0;
   margin: 1.5rem 17% 4rem 17%;
 }
 .projects .projectList {
@@ -402,8 +379,6 @@ button.heroButton {
     line-height: 2.125rem;
   }
   .projects p.projectsOverview {
-    font-size: 1rem;
-    line-height: 1.5rem;
     margin: 1.5rem 0 5rem 0;
   }
   .projects .projectList {
@@ -425,13 +400,7 @@ button.heroButton {
   align-items: center;
 }
 .testimonials .testimonialsHeading {
-  color: #000000;
-  font-size: 2.25rem;
-  line-height: 2.75rem;
   text-align: center;
-  text-transform: uppercase;
-  font-family: Montserrat;
-  letter-spacing: 0.1em;
 
   margin: 0 0 4rem;
   max-width: 51rem;
@@ -445,8 +414,6 @@ button.heroButton {
 
 @media only screen and (max-width: 413px) {
   .testimonials .testimonialsHeading {
-    font-size: 1.75rem;
-    line-height: 2.125rem;
     margin-bottom: 2.625rem;
   }
 }
@@ -460,13 +427,7 @@ button.heroButton {
   align-items: center;
 }
 .partners .partnersHeading {
-  color: #000000;
-  font-size: 2.25rem;
-  line-height: 2.75rem;
-  letter-spacing: 0.1em;
   text-align: center;
-  text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 4rem;
 }
 .partners .partnersHeading:first-of-type {
@@ -517,8 +478,6 @@ button.heroButton {
     padding: 64px 0px;
   }
   .partners .partnersHeading {
-    font-size: 1.75rem;
-    line-height: 2.125rem;
     margin-bottom: 2.625rem;
   }
   .partners .partnersList {
@@ -550,7 +509,7 @@ button.heroButton {
   text-align: center;
   margin-bottom: 4rem;
 }
-.footer .footerButton {
+.footer .footerLink {
   max-width: 23.75rem;
   margin-bottom: 200px;
 }
